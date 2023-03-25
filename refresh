@@ -1,0 +1,25 @@
+[32mNothing to migrate.[39m
+
+  [41;1m Illuminate\Database\QueryException [49;22m
+
+[39;1m  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telefono_celular' in 'field list' (SQL: insert into `proveedor` (`codigo_proveedor`, `nombre_proveedor`, `direccion`, `telefono_celular`, `updated_at`, `created_at`) values (ABC12345, Proveedor 3, Morales, 794845467, 2023-03-11 14:15:09, 2023-03-11 14:15:09))[39;22m
+
+  at [32mD:\laragon\www\prograII\vendor\laravel\framework\src\Illuminate\Database\Connection.php[39m:[32m712[39m
+    [90m708[0m[90m▕ [0m[35;1m        [0m[90;3m// If an exception occurs when attempting to run a query, we'll format the error[0m
+    [90m709[0m[90m▕ [0m[90;3m        // message to include the bindings with SQL, which will make this exception a[0m
+    [90m710[0m[90m▕ [0m[90;3m        // lot more helpful to the developer instead of just the database's errors.[0m
+    [90m711[0m[90m▕ [0m[90;3m        [0m[35;1mcatch ([0m[39;1mException $e[0m[35;1m) {[0m
+[31;1m  ➜ [0m[3;1m712[0m[90m▕ [0m[35;1m            throw new [0m[39;1mQueryException[0m[35;1m([0m
+    [90m713[0m[90m▕ [0m[35;1m                [0m[39;1m$query[0m[35;1m, [0m[39;1m$this[0m[35;1m->[0m[39;1mprepareBindings[0m[35;1m([0m[39;1m$bindings[0m[35;1m), [0m[39;1m$e[0m
+    [90m714[0m[90m▕ [0m[39;1m            [0m[35;1m);[0m
+    [90m715[0m[90m▕ [0m[35;1m        }[0m
+    [90m716[0m[90m▕ [0m[35;1m    }[0m
+
+  [34;1m• [39;22m[39;1mA column was not found[39;22m: You might have forgotten to run your migrations. You can run your migrations using `php artisan migrate`. 
+    [34mhttps://laravel.com/docs/master/migrations#running-migrations[39m
+
+  [33m1   [39m[39;1mD:\laragon\www\prograII\vendor\laravel\framework\src\Illuminate\Database\Connection.php[39;22m:[39;1m495[39;22m
+  [37m    PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telefono_celular' in 'field list'")[39m
+
+  [33m2   [39m[39;1mD:\laragon\www\prograII\vendor\laravel\framework\src\Illuminate\Database\Connection.php[39;22m:[39;1m495[39;22m
+  [37m    PDO::prepare("insert into `proveedor` (`codigo_proveedor`, `nombre_proveedor`, `direccion`, `telefono_celular`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?)")[39m

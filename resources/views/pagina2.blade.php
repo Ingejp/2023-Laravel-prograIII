@@ -8,4 +8,5 @@
 
 @section('content')
     <a href="{{route('lista-alumnos')}}">Links a pagina principal</a>
+    <button>Guardar</button>
 @endsection
