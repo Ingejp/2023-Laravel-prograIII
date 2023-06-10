@@ -19,9 +19,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Seguridad <span class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route('suzzanne.index')}}">Suzzanne <span class="sr-only">(current)</span></a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         Catálogos
@@ -29,6 +31,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('pagina2')}}">Transportistas</a>
                         <a class="dropdown-item" href="{{route('ruta')}}">Camiones</a>
+                        <a class="dropdown-item" href="{{route('Examen_final_connor')}}">ruta daniel</a>
                         <a class="dropdown-item" href="#">Predios</a>
                         <a class="dropdown-item" href="#">Contenido</a>
                         <a class="dropdown-item" href="{{route('examen.arangoview')}}">Arangoview</a>

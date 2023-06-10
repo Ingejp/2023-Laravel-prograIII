@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\ExamenFinal;
+
 use Illuminate\Http\Request;
 
 class ExamenFinalController extends Controller
 {
+
+    public function examen_final_personal(){
+        return view('danielview');
+
     /**
      * Display a listing of the resource.
      *
