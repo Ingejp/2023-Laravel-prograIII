@@ -4,7 +4,7 @@
 
 @section('contenidot')
     <div class="card">
-        <h5 class="card-header">Agregar nuevo transporte</h5>
+        <h5 class="card-header">Agregar </h5>
         <div class="card-body">
 
             <p class="card-text">
