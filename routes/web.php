@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
+
 Route::get('/pagina233', [\App\Http\Controllers\CatedraticoController::class,  'inicio'])->name('pagina2');
 Route::get('/alumnos', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('lista-alumnos');
 
