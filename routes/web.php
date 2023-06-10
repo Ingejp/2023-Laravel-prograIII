@@ -32,4 +32,4 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 //Josue David Garcia Arango
-Route::get('/index', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
+Route::get('/indexA', [\App\Http\Controllers\Catalogos\ExamenFinalArango::class, 'indexA' ])->name('Arangoview');
