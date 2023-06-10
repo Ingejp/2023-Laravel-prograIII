@@ -27,7 +27,7 @@
 
 
 <div class="card">
-    <h5 class="card-header">Agregar nueva persona</h5>
+    <h5 class="card-header">Agregar datos</h5>
     <div class="card-body">
 
         <p class="card-text">
