@@ -3,12 +3,22 @@
 namespace App\Http\Controllers;
 
 
+
 use App\Models\ExamenFinal;
+
 
 use Illuminate\Http\Request;
 
 class ExamenFinalController extends Controller
 {
+
+
+    public function index(){
+        return view('home');
+    }
+    public function pagina3(){
+        return view('pagina3');
+
 
     public function examen_final_personal(){
         return view('danielview');
