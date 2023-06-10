@@ -28,6 +28,7 @@
                         <a class="dropdown-item" href="{{route('ruta')}}">Camiones</a>
                         <a class="dropdown-item" href="#">Predios</a>
                         <a class="dropdown-item" href="#">Contenido</a>
+                        <a class="dropdown-item" href="#">Vista de Noe Esquivel</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
