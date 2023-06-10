@@ -6,10 +6,6 @@ class ExamenFinal
 {
     public function indexc()
     {
-        return view('examenfinal.index');
+        return view('ChristianAldana');
     }
-
 }
-
-
-

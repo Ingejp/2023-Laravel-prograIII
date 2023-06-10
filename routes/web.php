@@ -45,6 +45,11 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+Route::get('/indexc', [\App\Http\Controllers\ExamenFinal::class, 'indexc'])->name('examen.indexc');
+
 
 Route::get('/index', [\App\Http\Controllers\AngelVargasCController::class,  'index'])->name('alumno.index');
 //Route::get('/index2', [\App\Http\Controllers\AngelVargasCController::class,  'index2'])->name('home');
