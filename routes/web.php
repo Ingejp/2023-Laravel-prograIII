@@ -32,11 +32,13 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 
+Route::get('/index', [\App\Http\Controllers\ExamenFinalArango::class, 'index'])->name('examen.arangoview');
+
+
 
 Route::get('/Hatziry',[\App\Http\Controllers\ExamenFinalHatziryChacon::class,'index'])->name('examen_final_Chacon');
 
 Route::get('/examen_final_batz', [\App\Http\Controllers\ExamenFinalBatzController::class, 'index'])->name('examenbatz');
 
 Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
-
 
