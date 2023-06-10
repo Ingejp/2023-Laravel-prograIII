@@ -32,4 +32,4 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 //Edwing Batz
-Route::get('/examen_final_batz',[\App\Http\Controllers\Catalogos\ExamenFinalBatz::class, 'index'])->name('examen');
+Route::get('/examen_final_batz', [\App\Http\Controllers\ExamenFinalBatzController::class, 'index'])->name('examenbatz');

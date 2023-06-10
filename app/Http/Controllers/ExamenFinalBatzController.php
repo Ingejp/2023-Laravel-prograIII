@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ExamenFinalBatz extends Controller
+class ExamenFinalBatzController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,6 +14,7 @@ class ExamenFinalBatz extends Controller
     public function index()
     {
         //
+
         return view('batz.formulario');
     }
 
