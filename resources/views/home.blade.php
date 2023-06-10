@@ -6,7 +6,7 @@
     @parent
     <br>
     <h3><div class="text-center" >
-            Sistema para el registro de transacciones
+            Sistema de registro de transacciones
         </div>
     </h3>
 @endsection
