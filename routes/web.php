@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use app\Http\Controllers\AngelVargasCController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+  
     return view('examenfinal');
+
 });
 
 
@@ -37,6 +42,10 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 
+Route::get('/index', [\App\Http\Controllers\AngelVargasCController::class,  'index'])->name('alumno.index');
+//Route::get('/index2', [\App\Http\Controllers\AngelVargasCController::class,  'index2'])->name('home');
+
+
 Route::get('/examen_final_Melvin_Hernandez',[\App\Http\Controllers\MelvinHernandezController::class, 'index'])->name('MelvinHernandez');
 
 
@@ -49,4 +58,5 @@ Route::get('/Hatziry',[\App\Http\Controllers\ExamenFinalHatziryChacon::class,'in
 Route::get('/examen_final_batz', [\App\Http\Controllers\ExamenFinalBatzController::class, 'index'])->name('examenbatz');
 
 Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
+
 
