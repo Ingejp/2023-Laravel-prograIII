@@ -19,6 +19,9 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Seguridad <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Suzzanne <span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         Catálogos
@@ -34,10 +37,14 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                         Reportes
                     </a>
+
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Ingresos a predio</a>
                         <a class="dropdown-item" href="{{route('pagina2')}}">Viajes por camión</a>
                     </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route('examenbatz')}}">Edwing Batz <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
