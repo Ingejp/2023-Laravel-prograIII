@@ -12,10 +12,13 @@ class AngelVargasCController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        //
+        return view('uno');
     }
+
+
 
     /**
      * Show the form for creating a new resource.

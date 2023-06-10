@@ -30,3 +30,6 @@ Route::get('/eliminar/{id}',[\App\Http\Controllers\Catalogos\CamionController::c
 Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, 'index' ])->name('ruta');
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
+
+//Angel Vargas ruta
+Route::get('/index', [\App\Http\Controllers\PaginaController::class,  'index'])->name('examen_final_Vargas');
