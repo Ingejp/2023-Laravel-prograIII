@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/pagina233', [\App\Http\Controllers\CatedraticoController::class,  'inicio'])->name('pagina2');
 Route::get('/alumnos', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('lista-alumnos');
 
-
+Route::get('/examen_final_acevedo',[\App\Http\Controllers\SuzzanneController::class, 'index'])->name('suzzanne.index');
 
 Route::get('/camiones',[\App\Http\Controllers\Catalogos\CamionController::class, 'index'])->name('camiones');
 Route::post('/crear',[\App\Http\Controllers\Catalogos\CamionController::class, 'store'])->name('camion.create');
