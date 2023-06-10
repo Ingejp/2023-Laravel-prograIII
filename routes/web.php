@@ -16,12 +16,20 @@ use app\Http\Controllers\AngelVargasCController;
 */
 
 Route::get('/', function () {
-    return view('Vargas/layout');
+
+  
+    return view('examenfinal');
+
 });
+
 
 Route::get('/pagina233', [\App\Http\Controllers\CatedraticoController::class,  'inicio'])->name('pagina2');
 Route::get('/alumnos', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('lista-alumnos');
 
+Route::get('/', [\App\Http\Controllers\ExamenFinalController::class,  'examen_final_personal'])->name('Examen_final_connor');
+
+
+Route::get('/examen_final_acevedo',[\App\Http\Controllers\SuzzanneController::class, 'index'])->name('suzzanne.index');
 
 
 Route::get('/camiones',[\App\Http\Controllers\Catalogos\CamionController::class, 'index'])->name('camiones');
@@ -33,6 +41,22 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
-//Angel Vargas ruta
+
 Route::get('/index', [\App\Http\Controllers\AngelVargasCController::class,  'index'])->name('alumno.index');
 //Route::get('/index2', [\App\Http\Controllers\AngelVargasCController::class,  'index2'])->name('home');
+
+
+Route::get('/examen_final_Melvin_Hernandez',[\App\Http\Controllers\MelvinHernandezController::class, 'index'])->name('MelvinHernandez');
+
+
+Route::get('/index', [\App\Http\Controllers\ExamenFinalArango::class, 'index'])->name('examen.arangoview');
+
+
+
+Route::get('/Hatziry',[\App\Http\Controllers\ExamenFinalHatziryChacon::class,'index'])->name('examen_final_Chacon');
+
+Route::get('/examen_final_batz', [\App\Http\Controllers\ExamenFinalBatzController::class, 'index'])->name('examenbatz');
+
+Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
+
+
