@@ -43,6 +43,9 @@
                         <a class="dropdown-item" href="{{route('pagina2')}}">Viajes por camión</a>
                     </div>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{route('examenbatz')}}">Edwing Batz <span class="sr-only">(current)</span></a>
+                </li>
             </ul>
         </div>
     </nav>
