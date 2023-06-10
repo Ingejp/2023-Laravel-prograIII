@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 
 class ExamenFinalArango extends Controller
 {
-    public function indexA (){
 
+
+    public function index(){
+
+        return view('arangoview');
     }
+
 }
