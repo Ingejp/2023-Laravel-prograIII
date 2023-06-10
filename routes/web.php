@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\ExamenFinal;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,4 +31,4 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
-Route::get('/examen_final_esquivel',[\App\Http\Controllers\Catalogos\ExamenFinal::class, 'indexn'])->name('examen_final_esquivel');
+Route::get('/examen_final_esquivel',[\App\Http\Controllers\ExamenFinal::class, 'index'])->name('examen_final_esquivel');
