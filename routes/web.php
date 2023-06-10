@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('examenfinal');
 });
 
 Route::get('/pagina233', [\App\Http\Controllers\CatedraticoController::class,  'inicio'])->name('pagina2');
@@ -31,5 +31,4 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
-
-Route::get('/indexc', [\App\Http\Controllers\ExamenFinal::class, 'indexc'])->name('examen.indexc');
+Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
