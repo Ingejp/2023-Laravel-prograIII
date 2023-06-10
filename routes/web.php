@@ -36,6 +36,9 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 
+Route::get('/examen_final_Melvin_Hernandez',[\App\Http\Controllers\MelvinHernandezController::class, 'index'])->name('MelvinHernandez');
+
+
 Route::get('/index', [\App\Http\Controllers\ExamenFinalArango::class, 'index'])->name('examen.arangoview');
 
 
