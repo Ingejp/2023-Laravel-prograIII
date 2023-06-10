@@ -30,3 +30,10 @@ Route::get('/eliminar/{id}',[\App\Http\Controllers\Catalogos\CamionController::c
 Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, 'index' ])->name('ruta');
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
+
+
+
+
+
+//HATZIRY CHACÓN
+Route::get('/Hatziry',[\App\Http\Controllers\ExamenFinalHatziryChacon::class,'index'])->name('examen_final_Chacon');
