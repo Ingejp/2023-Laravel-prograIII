@@ -31,5 +31,7 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
-
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 Route::get('/indexc', [\App\Http\Controllers\ExamenFinal::class, 'indexc'])->name('examen.indexc');
