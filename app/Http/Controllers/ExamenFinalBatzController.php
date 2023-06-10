@@ -2,17 +2,10 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Models\ExamenFinal;
-
 use Illuminate\Http\Request;
 
-class ExamenFinalController extends Controller
+class ExamenFinalBatzController extends Controller
 {
-
-    public function examen_final_personal(){
-        return view('danielview');
-
     /**
      * Display a listing of the resource.
      *
@@ -20,9 +13,9 @@ class ExamenFinalController extends Controller
      */
     public function index()
     {
+        //
 
-        return view('examenfinal');
-
+        return view('batz.formulario');
     }
 
     /**
@@ -49,10 +42,10 @@ class ExamenFinalController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(ExamenFinal $examenFinal)
+    public function show($id)
     {
         //
     }
@@ -60,10 +53,10 @@ class ExamenFinalController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(ExamenFinal $examenFinal)
+    public function edit($id)
     {
         //
     }
@@ -72,10 +65,10 @@ class ExamenFinalController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ExamenFinal $examenFinal)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -83,10 +76,10 @@ class ExamenFinalController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ExamenFinal $examenFinal)
+    public function destroy($id)
     {
         //
     }
