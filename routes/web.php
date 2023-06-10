@@ -17,9 +17,13 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/', function () {
+    return view('examen_final_blanco');
+});
+
 Route::get('/pagina233', [\App\Http\Controllers\CatedraticoController::class,  'inicio'])->name('pagina2');
 Route::get('/alumnos', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('lista-alumnos');
-
+Route::get('/pagina3', [\App\Http\Controllers\ExamenFinal::class,  'index'])->name('examen_final_blanco');
 
 
 Route::get('/camiones',[\App\Http\Controllers\Catalogos\CamionController::class, 'index'])->name('camiones');

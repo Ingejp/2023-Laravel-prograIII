@@ -10,8 +10,8 @@ class ExamenFinal extends Controller
         return view('home');
     }
 
-    public function pagina3(){
-        return view('pagina3');
+    public function examen_final_blanco(){
+        return view('examen_final_blanco');
 
 
         //return view('pagina2', compact('datos'));
