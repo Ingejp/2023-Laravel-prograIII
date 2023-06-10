@@ -15,9 +15,13 @@ class AngelVargasCController extends Controller
 
     public function index()
     {
-        return view('examen_final_Vargas');
+        return view('Vargas/alumno');
     }
 
+    public function index2()
+    {
+        return view('home');
+    }
 
 
     /**

@@ -4,30 +4,30 @@
 
 @section('contenido')
 
-    @if (\Session::has('success'))
-        <div class="alert alert-success">
-            <ul>
-                <li>{!! \Session::get('success') !!}</li>
-            </ul>
-        </div>
-    @endif
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
+{{--    @if (\Session::has('success'))--}}
+{{--        <div class="alert alert-success">--}}
+{{--            <ul>--}}
+{{--                <li>{!! \Session::get('success') !!}</li>--}}
+{{--            </ul>--}}
+{{--        </div>--}}
+{{--    @endif--}}
+{{--    @if ($errors->any())--}}
+{{--        <div class="alert alert-danger">--}}
+{{--            <ul>--}}
+{{--                @foreach ($errors->all() as $error)--}}
+{{--                    <li>{{ $error }}</li>--}}
+{{--                @endforeach--}}
+{{--            </ul>--}}
+{{--        </div>--}}
+{{--    @endif--}}
 
-    @if(\Session::has('warning'))
-        <div class="alert alert-warning">
-            <ul>
-                <li>{!! \Session::get('warning') !!}</li>
-            </ul>
-        </div>
-    @endif
+{{--    @if(\Session::has('warning'))--}}
+{{--        <div class="alert alert-warning">--}}
+{{--            <ul>--}}
+{{--                <li>{!! \Session::get('warning') !!}</li>--}}
+{{--            </ul>--}}
+{{--        </div>--}}
+{{--    @endif--}}
 
 
 
@@ -37,21 +37,21 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-12">
-                    @if($mensaje = \Illuminate\Support\Facades\Session::get('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ $mensaje }}
-                        </div>
+{{--                    @if($mensaje = \Illuminate\Support\Facades\Session::get('success'))--}}
+{{--                        <div class="alert alert-success" role="alert">--}}
+{{--                            {{ $mensaje }}--}}
+{{--                        </div>--}}
 
-                    @endif
+{{--                    @endif--}}
 
 
                 </div>
             </div>
             <h5 class="card-title text-center">Listado de pilotos en el sistema</h5>
             <p>
-                <a href="{{ route("personas.create") }}" class="btn btn-primary">
-                    <span class="fas fa-user-plus"></span> Agregar nuevo piloto
-                </a>
+{{--                <a href="{{ route("alumno.index") }}" class="btn btn-primary">--}}
+{{--                    <span class="fas fa-user-plus"></span> Agregar nuevo alumno--}}
+{{--                </a>--}}
 
                 {{--                <a href="{{ route("transportes.createt") }}" class="btn btn-primary">--}}
                 {{--                    <span class="fas fa-user-plus"></span> Agregar nuevo transporte--}}
@@ -72,40 +72,40 @@
             <div class="table table-responsive">
                 <table class="table table-sm table-bordered">
                     <thead>
-                    <th>Apellido paterno</th>
-                    <th>Apellido materno</th>
                     <th>Nombre</th>
-                    <th>Fecha de nacimiento</th>
+                    <th>Apellido</th>
+                    <th>Carne</th>
+                    <th><Nota_examen_final></th>
                     <th>Editar</th>
                     <th>Eliminar</th>
                     </thead>
                     <tbody>
-                    @foreach($datos as $item)
-                        <tr>
-                            <td>{{ $item->paterno }}</td>
-                            <td>{{ $item->materno }}</td>
-                            <td>{{ $item->nombre }}</td>
-                            <td>{{ $item->fecha_nacimiento }}</td>
+{{--                    @foreach($datos as $item)--}}
+{{--                        <tr>--}}
+{{--                            <td>{{ $item->nombre }}</td>--}}
+{{--                            <td>{{ $item->Apellido }}</td>--}}
+{{--                            <td>{{ $item->carne }}</td>--}}
+{{--                            <td>{{ $item->nota_examen_final }}</td>--}}
 
-                            <td>
-                                <form action="{{ route("personas.edit", $item->id) }}" method="GET">
-                                    <button class="btn btn-warning btn-sm">
-                                        <span class="fas fa-user-edit"></span>
-                                    </button>
-                                </form>
-                            </td>
+{{--                            <td>--}}
+{{--                                <form action="{{ route("personas.edit", $item->id) }}" method="GET">--}}
+{{--                                    <button class="btn btn-warning btn-sm">--}}
+{{--                                        <span class="fas fa-user-edit"></span>--}}
+{{--                                    </button>--}}
+{{--                                </form>--}}
+{{--                            </td>--}}
 
-                            <td>
-                                <form action="{{ route("personas.show", $item->id) }}" method="GET">
-                                    <button class="btn btn-danger btn-sm">
-                                        <span class="fas fa-user-times"></span>
-                                    </button>
-                                </form>
-                            </td>
+{{--                            <td>--}}
+{{--                                <form action="{{ route("personas.show", $item->id) }}" method="GET">--}}
+{{--                                    <button class="btn btn-danger btn-sm">--}}
+{{--                                        <span class="fas fa-user-times"></span>--}}
+{{--                                    </button>--}}
+{{--                                </form>--}}
+{{--                            </td>--}}
 
 
-                        </tr>
-                    @endforeach
+{{--                        </tr>--}}
+{{--                    @endforeach--}}
                     </tbody>
 
                 </table>
@@ -115,12 +115,12 @@
 
 
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    {{ $datos->links() }}
-                </div>
-                <hr>
-            </div>
+{{--            <div class="row">--}}
+{{--                <div class="col-sm-12">--}}
+{{--                    {{ $datos->links() }}--}}
+{{--                </div>--}}
+{{--                <hr>--}}
+{{--            </div>--}}
 
             </p>
 

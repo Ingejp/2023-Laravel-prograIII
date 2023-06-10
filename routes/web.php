@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use app\Http\Controllers\AngelVargasCController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,4 +34,5 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 //Angel Vargas ruta
-Route::get('/index', [\App\Http\Controllers\PaginaController::class,  'index'])->name('examen_final_Vargas');
+Route::get('/index', [\App\Http\Controllers\AngelVargasCController::class,  'index'])->name('alumno.index');
+//Route::get('/index2', [\App\Http\Controllers\AngelVargasCController::class,  'index2'])->name('home');

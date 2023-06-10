@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index3">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/index2">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
@@ -42,8 +42,8 @@
                             Enlace desplegable
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ route("examen_final_Vargas") }}">Pagina 1</a></li>
-                            <li><a class="dropdown-item" href="{{ route("dos") }}">Pagina 2</a></li>
+                            <li><a class="dropdown-item" href="{{ route("alumno.index") }}">alumno 1</a></li>
+{{--                            <li><a class="dropdown-item" href="{{ route("dos") }}">Pagina 2</a></li>--}}
                             {{--                            <li><a class="dropdown-item" href="{{ route("personas.index") }}">Pilotos</a></li>--}}
                             {{--                            <li><a class="dropdown-item" href="{{ route("predios.indexp") }}">Predios</a></li>--}}
                             {{--                            <li><a class="dropdown-item" href="{{ route("tmercancias.indextm") }}">Tipo_mercancia</a></li>--}}
@@ -55,6 +55,15 @@
         </div>
     </nav>
 </div>
+
+
+
+
+
+
+
+
+
 
 <div class="container">
     <br><br>
