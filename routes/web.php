@@ -31,4 +31,4 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
-Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('lista-alumnos');
+Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
