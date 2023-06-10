@@ -2,43 +2,27 @@
 
 namespace App\Http\Controllers;
 
-
-
-
-use App\Models\ExamenFinal;
-
-
+use App\Models\AngelVargasC;
 use Illuminate\Http\Request;
 
-class ExamenFinalController extends Controller
+class AngelVargasCController extends Controller
 {
-
-    public function vistabryan(){
-        return view('vistabryan');
-    }
-
-
-    public function index(){
-        return view('home');
-    }
-    public function pagina3(){
-        return view('pagina3');
-
-
-    public function examen_final_personal(){
-        return view('danielview');
-
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-
-        return view('examenfinal');
-
+        return view('Vargas/alumno');
     }
+
+    public function index2()
+    {
+        return view('home');
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -64,10 +48,10 @@ class ExamenFinalController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  \App\Models\AngelVargasC  $angelVargasC
      * @return \Illuminate\Http\Response
      */
-    public function show(ExamenFinal $examenFinal)
+    public function show(AngelVargasC $angelVargasC)
     {
         //
     }
@@ -75,10 +59,10 @@ class ExamenFinalController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  \App\Models\AngelVargasC  $angelVargasC
      * @return \Illuminate\Http\Response
      */
-    public function edit(ExamenFinal $examenFinal)
+    public function edit(AngelVargasC $angelVargasC)
     {
         //
     }
@@ -87,10 +71,10 @@ class ExamenFinalController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  \App\Models\AngelVargasC  $angelVargasC
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ExamenFinal $examenFinal)
+    public function update(Request $request, AngelVargasC $angelVargasC)
     {
         //
     }
@@ -98,12 +82,11 @@ class ExamenFinalController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ExamenFinal  $examenFinal
+     * @param  \App\Models\AngelVargasC  $angelVargasC
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ExamenFinal $examenFinal)
+    public function destroy(AngelVargasC $angelVargasC)
     {
         //
-
     }
 }

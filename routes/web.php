@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use app\Http\Controllers\AngelVargasCController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +16,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+  
+    return view('examenfinal');
+
 });
+
 
 Route::get('/pagina233', [\App\Http\Controllers\CatedraticoController::class,  'inicio'])->name('pagina2');
 Route::get('/alumnos', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('lista-alumnos');
+
+Route::get('/pagina223', [\App\Http\Controllers\ExamenFinalController::class,  'inicio'])->name('examen_final_blanco');
+
+
+Route::get('/', [\App\Http\Controllers\ExamenFinalController::class,  'examen_final_personal'])->name('Examen_final_connor');
+
+
+Route::get('/examen_final_acevedo',[\App\Http\Controllers\SuzzanneController::class, 'index'])->name('suzzanne.index');
 
 
 
@@ -32,4 +46,31 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 
+
 Route::get('/examen_final_Martinez', [\App\Http\Controllers\ExamenFinalController::class,  'vistabryan'])->name('vistabryan');
+
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+Route::get('/indexc', [\App\Http\Controllers\ExamenFinal::class, 'indexc'])->name('examen.indexc');
+
+
+Route::get('/index', [\App\Http\Controllers\AngelVargasCController::class,  'index'])->name('alumno.index');
+//Route::get('/index2', [\App\Http\Controllers\AngelVargasCController::class,  'index2'])->name('home');
+
+
+Route::get('/examen_final_Melvin_Hernandez',[\App\Http\Controllers\MelvinHernandezController::class, 'index'])->name('MelvinHernandez');
+
+
+Route::get('/index', [\App\Http\Controllers\ExamenFinalArango::class, 'index'])->name('examen.arangoview');
+
+
+
+Route::get('/Hatziry',[\App\Http\Controllers\ExamenFinalHatziryChacon::class,'index'])->name('examen_final_Chacon');
+
+Route::get('/examen_final_batz', [\App\Http\Controllers\ExamenFinalBatzController::class, 'index'])->name('examenbatz');
+
+Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
+
+
+
