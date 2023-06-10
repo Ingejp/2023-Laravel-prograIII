@@ -21,22 +21,22 @@
 <form>
 
     <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
+        <label for="nombre" class="form-label">Andy</label>
         <input type="name" class="form-control" id="nombre">
     </div>
 
     <div class="mb-3">
-        <label for="apellido" class="form-label">apellido</label>
+        <label for="apellido" class="form-label">Lima</label>
         <input type="name" class="form-control" id="apellido">
     </div>
 
     <div class="mb-3">
-        <label for="carne" class="form-label">Carné</label>
+        <label for="carne" class="form-label">0909178512</label>
         <input type="name" class="form-control" id="carne">
     </div>
 
     <div class="mb-3">
-        <label for="nota" class="form-label">Nota examen final</label>
+        <label for="nota" class="form-label">Nota examen final 100</label>
         <input type="name" class="form-control" id="nota">
     </div>
 
