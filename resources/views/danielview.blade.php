@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('daniellayoyt')
 
 @section("tituloPagina", "crear un nuevo registro")
 
@@ -15,11 +15,11 @@
                 <label for="">Nombre</label>
                 <input type="text" name="nombre" class="form-control" required>
                 <label for="">apellido</label>
-                <input type="text" name="razon_social" class="form-control" required>
                 <input type="text" name="id" class="form-control" required>
                 <label for=""> carnet</label>
                 <input type="text" name="id" class="form-control" required>
                 <label for="">nota_examen_final</label>
+                <input type="text" name="id" class="form-control" required>
                 <br>
                     <span class="fas fa-undo-alt"></span> Regresar
                 </a>
