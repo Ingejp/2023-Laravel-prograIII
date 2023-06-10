@@ -45,6 +45,10 @@ Route::get('/lista', [\App\Http\Controllers\Catalogos\CamionController::class, '
 Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::class, 'register' ])->name('camion.register');
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
+
+
+Route::get('/examen_final_Martinez', [\App\Http\Controllers\ExamenFinalController::class,  'vistabryan'])->name('vistabryan');
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -67,5 +71,6 @@ Route::get('/Hatziry',[\App\Http\Controllers\ExamenFinalHatziryChacon::class,'in
 Route::get('/examen_final_batz', [\App\Http\Controllers\ExamenFinalBatzController::class, 'index'])->name('examenbatz');
 
 Route::get('/examen_final_Lima', [\App\Http\Controllers\AlumnoController::class,  'index'])->name('examenfinal');
+
 
 

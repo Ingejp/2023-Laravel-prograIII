@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 
+
 use App\Models\ExamenFinal;
 
 
@@ -11,6 +12,10 @@ use Illuminate\Http\Request;
 
 class ExamenFinalController extends Controller
 {
+
+    public function vistabryan(){
+        return view('vistabryan');
+    }
 
 
     public function index(){
@@ -99,5 +104,6 @@ class ExamenFinalController extends Controller
     public function destroy(ExamenFinal $examenFinal)
     {
         //
+
     }
 }
