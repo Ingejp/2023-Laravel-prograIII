@@ -4,8 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Examen_final_connor extends Controller
-{
+class ExamenFinalController extends Controller
 {
     public function examen_final_personal(){
         return view('danielview');

@@ -26,6 +26,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('pagina2')}}">Transportistas</a>
                         <a class="dropdown-item" href="{{route('ruta')}}">Camiones</a>
+                        <a class="dropdown-item" href="{{route('Examen_final_connor')}}">Camiones</a>
                         <a class="dropdown-item" href="#">Predios</a>
                         <a class="dropdown-item" href="#">Contenido</a>
                     </div>
