@@ -22,6 +22,7 @@ Route::get('/alumnos', [\App\Http\Controllers\AlumnoController::class,  'index']
 
 
 
+
 Route::get('/camiones',[\App\Http\Controllers\Catalogos\CamionController::class, 'index'])->name('camiones');
 Route::post('/crear',[\App\Http\Controllers\Catalogos\CamionController::class, 'store'])->name('camion.create');
 Route::post('/editar/{id}',[\App\Http\Controllers\Catalogos\CamionController::class, 'edit'])->name('camion.edit');
