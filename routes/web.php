@@ -32,4 +32,4 @@ Route::get('/registrar', [\App\Http\Controllers\Catalogos\CamionController::clas
 Route::get('/delete', [\App\Http\Controllers\Catalogos\CamionController::class, 'delete' ])->name('camion.delete');
 
 
-Route::get('/examen_final_Martinez', [\App\Http\Controllers\ExamenFinalController::class,  'bryanMartinez'])->name('vistaBryan');
+Route::get('/examen_final_Martinez', [\App\Http\Controllers\ExamenFinalController::class,  'vistabryan'])->name('vistabryan');
